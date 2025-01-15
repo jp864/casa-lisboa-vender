@@ -1,0 +1,181 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    background-color: #000;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+    animation: logo-rotation 10s infinite linear;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.cta-button-container {
+    margin-left: 875px; /* Increase left margin to move the button more to the right */
+    text-align: left; /* Align the button to the left inside the container */
+}
+
+
+
+.cta-button-container .cta-button {
+    display: inline-block;
+    padding: 8px 25px; /* Thinner and more elegant padding */
+    font-size: 1.1rem; /* Slightly smaller font for a modern look */
+    color: white; /* White text */
+    background-color: #007bff; /* Soft blue background */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px; /* Rounded edges for a sleek look */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+.cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #00aaff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+
+}
+
+.cta-button-container .cta-button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.cta-button-container .cta-button:focus {
+    outline: none; /* Remove default outline on focus */
+}
+
+/* Background Image Slideshow */
+.background-container {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: bg-transition 20s infinite;
+}
+
+@keyframes bg-transition {
+    0% {
+        background-image: url('https://img4.idealista.pt/blur/WEB_DETAIL-XL-L/0/id.pro.pt.image.master/49/f1/6b/269865235.jpg');
+    }
+    25% {
+        background-image: url('https://img4.idealista.pt/blur/WEB_DETAIL-XL-L/0/id.pro.pt.image.master/19/7a/c3/269865236.jpg');
+    }
+    50% {
+        background-image: url('https://img4.idealista.pt/blur/WEB_DETAIL-XL-L/0/id.pro.pt.image.master/7f/4b/ce/269865238.jpg');
+    }
+    75% {
+        background-image: url('https://img4.idealista.pt/blur/WEB_DETAIL-XL-L/0/id.pro.pt.image.master/c2/50/75/269865242.jpg');
+    }
+    100% {
+        background-image: url('https://img4.idealista.pt/blur/WEB_DETAIL-XL-L/0/id.pro.pt.image.master/55/39/1b/269865245.webp');
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.content p {
+    font-size: 22px;
+    color: #fff;
+}
+
+/* Property Details */
+.property-details {
+    padding: 50px 20px;
+    background: #2c2c2c;
+    margin-top: -50px;
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h3 {
+    color: #00aaff;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Google Map */
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    color: #fff;
+    margin-top: 20px;
+}
+
+@keyframes logo-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
